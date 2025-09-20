@@ -7,7 +7,7 @@ async function postRequest(
     headers?: Record<string, string>,
     body?: string
 ) {
-    const response = await invoke<{
+    return await invoke<{
         status: number;
         body: string;
     }>('post_request', {
@@ -17,7 +17,6 @@ async function postRequest(
             body,
         },
     });
-    return response;
 }
 
 export default function App() {
