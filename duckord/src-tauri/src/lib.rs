@@ -1,6 +1,5 @@
-use tauri::Manager;
 use serde::{Deserialize, Serialize};
-use std::collection::HashMap;
+use std::collections::HashMap;
 
 #[derive(Deserialize)]
 pub struct PostRequestArgs {
